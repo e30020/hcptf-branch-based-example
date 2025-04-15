@@ -1,11 +1,11 @@
 output "pet_example_one_id" {
-  value = module.random_pet_id_1
+  value = module.example-module.random_pet_id_1
 }
 
 output "pet_example_two_id" {
-  value = module.random_pet_id_2
+  value = module.example-module.random_pet_id_2
 }
 
 output "pet_example_three_id" {
-  value = module.random_pet_id_3
+  value = module.example-module.random_pet_id_2
 }
