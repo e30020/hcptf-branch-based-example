@@ -7,26 +7,7 @@ terraform {
   }
 }
 
-resource "random_pet" "example_one" {
-  length    = var.pet_length
-  prefix    = var.pet_prefix
-  separator = var.pet_separator
-}
-
-resource "random_pet" "example_two" {
-  length    = var.pet_length
-  prefix    = var.pet_prefix
-  separator = var.pet_separator
-}
-
-resource "random_pet" "example_three" {
-  length    = var.pet_length
-  prefix    = var.pet_prefix
-  separator = var.pet_separator
-}
-
-resource "random_pet" "example_four" {
-  length    = var.pet_length
-  prefix    = var.pet_prefix
-  separator = var.pet_separator
+module "example-module" {
+  source  = "app.terraform.io/hashicorp_org_tel_sec/example-module/random"
+  version = "1.0.0"
 }
